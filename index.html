@@ -8,16 +8,16 @@
 </head>
 <body>
 
-<!-- PASSWORD SCREEN -->
+<!-- LOCK -->
 <div id="lockScreen">
   <input type="password" id="password" placeholder="Enter password">
   <button onclick="checkPassword()">Enter</button>
 </div>
 
-<!-- MAIN CONTENT -->
-<div id="mainContent" style="display:none;">
+<!-- MAIN -->
+<div id="mainContent">
 
-  <!-- TOP IMAGE + SEARCH -->
+  <!-- TOP IMAGE -->
   <div class="top-section">
     <img src="cake.jpeg" class="main-img">
 
@@ -25,17 +25,13 @@
       <input type="text" id="searchInput" placeholder="Search...">
       <button onclick="searchText()">Search</button>
     </div>
-
-    <div id="result">
-      <img src="eyes.jpeg" id="resultImg" style="display:none;">
-    </div>
   </div>
 
-  <!-- BOTTOM IMAGE + TEXT -->
-  <div class="bottom-section">
+  <!-- MIDDLE IMAGE WITH TEXT OVER -->
+  <div class="middle-section">
     <img src="drawing.jpeg" class="main-img">
 
-    <p class="poem">
+    <div class="overlay-text">
 You’re the kind of nature where one can rest his head on your lap and feel at peace—
 but he must also be ready for the storm you carry within.
 And if he stays through it all,
@@ -47,7 +43,7 @@ And the truth is—
 you didn’t do anything for him.
 Your presence alone gave him all of this,
 and that’s more special than anything else in the world.
-    </p>
+    </div>
   </div>
 
 </div>

@@ -1,18 +1,22 @@
 body {
   margin: 0;
+  background: black;
   font-family: Arial, sans-serif;
-  background: #000;
   color: white;
   text-align: center;
 }
 
-/* Lock screen */
+#mainContent {
+  display: none;
+}
+
+/* LOCK */
 #lockScreen {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  flex-direction: column;
 }
 
 input, button {
@@ -21,47 +25,50 @@ input, button {
   border: none;
 }
 
-/* Images */
+/* IMAGES */
 .main-img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
 }
 
-/* Search */
+/* SEARCH */
 .search-box {
-  position: relative;
   margin-top: -60px;
 }
 
 .search-box input {
   width: 60%;
   padding: 12px;
-  border-radius: 25px;
-  background: rgba(255,255,255,0.2);
+  border-radius: 30px;
+  border: 2px solid white; /* WHITE BORDER */
+  background: rgba(255,255,255,0.1);
   color: white;
   outline: none;
 }
 
-/* Result image */
-#resultImg {
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 10px;
+/* MIDDLE SECTION */
+.middle-section {
+  position: relative;
 }
 
-/* Bottom text */
+/* TEXT ON IMAGE */
+.overlay-text {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  color: #800000;
+  font-style: italic;
+  line-height: 1.6;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
 .poem {
   padding: 20px;
   line-height: 1.6;
   font-size: 14px;
-}
-
-.poem {
-  padding: 20px;
-  line-height: 1.8;
-  font-size: 15px;
-  color: #800000;
+  color: #800000; /* maroon */
   font-style: italic;
-  text-shadow: 0 0 5px rgba(128, 0, 0, 0.3);
 }

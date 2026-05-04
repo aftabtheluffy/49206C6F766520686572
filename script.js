@@ -13,8 +13,6 @@ function searchText() {
   const input = document.getElementById("searchInput").value.toLowerCase();
 
   if (input === "the moon is beautiful") {
-    document.getElementById("resultImg").style.display = "block";
-  } else {
-    document.getElementById("resultImg").style.display = "none";
+    window.open("eyes.html", "_blank"); // OPEN NEW TAB
   }
 }
